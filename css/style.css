@@ -1,0 +1,36 @@
+
+
+:root {
+    --navbar-height: 4rem;
+    --sideBar-widht: 10rem;
+    
+}
+
+
+.pageWrapper{
+    height: calc(100vh + 4rem);
+}
+
+
+.navbar{
+    height: var(--navbar-height)
+}
+
+main{
+    height: calc(100% - var(--navbar-height));
+    padding-top: 4rem;
+
+}
+
+.mainContent{
+    width: calc(100% - var(--sideBar-widht));
+    height: calc(100% - 8rem );
+}
+
+.sideBar{
+    width: var(--sideBar-widht);
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+}
+
