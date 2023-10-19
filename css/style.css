@@ -1,11 +1,9 @@
 
-
 :root {
     --navbar-height: 4rem;
     --sideBar-widht: 10rem;
     
 }
-
 
 .pageWrapper{
     height: calc(100vh + 4rem);
@@ -16,21 +14,47 @@
     height: var(--navbar-height)
 }
 
+.search-bar {
+    flex: 0 0 82%;
+  }
+
+ .form-control {
+    background-color: #e9ecef;
+  }
+
+
+
 main{
-    height: calc(100% - var(--navbar-height));
+    height: 100%;
     padding-top: 4rem;
 
 }
 
 .mainContent{
-    width: calc(100% - var(--sideBar-widht));
+    width: 100%;
     height: calc(100% - 8rem );
+    margin-left: var(--sideBar-widht);
+    
 }
 
 .sideBar{
-    width: var(--sideBar-widht);
-    height: 100vh;
-    background-color: black;
+    height: calc(100vh - 4rem);
+    background-image: url(sidebar-bg.png);
+    background-color: #1a2b3d;
     position: fixed;
+    width: var(--sideBar-widht);
 }
+
+.topContainer{
+    height: calc(100% - 4rem);
+}
+
+
+
+.badge{
+    background-color: #2e5bb4;
+
+}
+
+
 

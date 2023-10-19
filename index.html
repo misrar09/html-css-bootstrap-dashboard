@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     </body>
     <title>Bootstrap Dasboard</title>
@@ -16,36 +19,125 @@
 
 <body>
     <div class="pageWrapper">
+        <!-- HEADER AND NAV BAR SECTION -->
         <header>
-            <nav class="navbar bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand"> <img src="./img/logo.svg" alt=""></a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
+                <div class="container-fluid justify-content-start">
+                    <a class="navbar-brand pe-2"> <img src="./img/logo.svg" alt=""></a>
+                    <form class="d-flex search-bar">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input class="form-control me-2" type="search"
+                                placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </div>
                     </form>
+                    <div class="navIcons">
+                        <a class="text-secondary p-2" href="#"><i class="fa-solid fa-bars"></i></a>
+                        <a class="text-secondary p-2" href="#"><i class="fa-solid fa-circle-question"></i></a>
+                        <a class="text-secondary p-2" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        <a class="text-warning p-2" href="#"><i class="fa-solid fa-bell"></i></a>
+                    </div>
                 </div>
             </nav>
         </header>
 
-
+        <!-- MAIN SECTION WITH SIDE BAR AND OTHER CONTENT -->
         <main class="d-flex">
 
-            <div class="sideBar ">
-                <div class="topContainer">
+            <div class="sideBar">
+                <div class="topContainer p-4">
+                    <ul class="p-0">
+                        <li class="list-unstyled pb-3"><a class="text-decoration-none text-white " href="#"><i
+                                    class="fa-solid fa-house pe-2"></i><span class="fw-semibold pe-1">Home</span></a>
+                        </li>
+                        <li class="list-unstyled pb-3"><a class="text-decoration-none text-white " href="#"><i
+                                    class="fa-solid fa-chart-simple pe-2"></i><span
+                                    class="fw-semibold pe-1">Stats</span></a></li>
+                        <li class="list-unstyled pb-3"><a class="text-decoration-none text-white " href="#"><i
+                                    class="fa-solid fa-signal pe-2"></i><span
+                                    class="fw-semibold pe-1">Signals</span></a></li>
+                    </ul>
                 </div>
 
-                <div class="bottomContainer">
-
+                <div class="bottomContainer px-4">
+                    <ul class="p-0">
+                        <li class="list-unstyled pb-3"><a class="text-decoration-none text-white " href="#"><i
+                                    class="fa-solid fa-gear pe-2"></i><span class="fw-semibold pe-1">Admin</span></a>
+                        </li>
+                    </ul>
+                    </ul>
                 </div>
 
             </div>
+            <!-- Other content starts here -->
+            <div class="mainContent container-fluid">
 
-            <div class="mainContent">
-                <div class="row"></div>
+                <div class="row bg-primary py-4 text-white">
+                    <div class="col-12 col-sm-6">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <h5>Boolean</h5>
+                            </div>
+                            <div class="col-1">
+                                <span class="badge rounded-pill">Piano Blaze</span>
+                            </div>
+                        </div>
+                        <span class="badge rounded-pill">3 app</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <span class="badge rounded-pill">Boolean mobile app</span>
+                        <span class="badge rounded-pill">Boolean web app</span>
+                        <span class="badge rounded-pill">Boolean blog app</span>
+                    </div>
+
+                    <div class="lh-1 col-12 col-sm-4">
+                        <p>Student online negli ultimi 30 minuti</p>
+                        <p class="fs-3">125</p>
+                    </div>
+
+                    <div class="col-12 order-first col-sm-2 order-sm-last">
+                        <span class="pe-3">Nuovo Studente </span>
+                        <i class=" add-btn fa-sharp fa-solid fa-plus border border-white p-2"></i>
+
+
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-8"></div>
-                    <div class="col-4"></div>
+                    <div class="col-8">
+                        <div class="card">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
