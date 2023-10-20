@@ -58,7 +58,8 @@ section{
 
 
 
-.badge{
+.badge,
+.roundPlusBadge{
     background-color: #2e5bb4;
 
 }
