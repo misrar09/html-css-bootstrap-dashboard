@@ -25,7 +25,7 @@
    /*  flex: 0 0 75%; */
   }
 
- .form-control {
+ .search-bar .form-control {
     background-color: #e9ecef;
   }
 
@@ -67,18 +67,14 @@ section{
 #offcanvasRight {
     max-width: 50%;
     width: 50%;
-   
+
+}
 
 
 th.nome{
     width: 30%;
 }
 
-
-/* .table{
-    font-size: 0.75rem;
-    
-} */
 
 
 .coding-image{
@@ -110,6 +106,12 @@ th.nome{
 
     .mainContent{
         width: calc(100% - var(--sideBar-mobile-width));
+    }
+
+    #offcanvasRight {
+        max-width: 100%;
+        width: 100%;
+    
     }
     
 }
