@@ -72,25 +72,25 @@
         </header>
 
         <!-- MAIN SECTION WITH SIDE BAR AND OTHER CONTENT -->
-
+        <!-- Sidebar -->
         <div class="sideBar">
             <div class="topContainer p-4">
                 <ul class="p-0">
                     <li class="list-unstyled pb-3">
                         <a class="text-decoration-none text-white" href="#">
-                            <i class="fa-solid fa-house pe-2"></i>
+                            <i class="fa-solid fa-house pe-2 ps-1"></i>
                             <span class="fw-semibold pe-1 d-none d-md-inline">Home</span>
                         </a>
                     </li>
                     <li class="list-unstyled pb-3">
                         <a class="text-decoration-none text-white " href="#">
-                            <i class="fa-solid fa-chart-simple pe-2"></i>
+                            <i class="fa-solid fa-chart-simple pe-2 ps-1"></i>
                             <span class="fw-semibold pe-1 d-none d-md-inline">Stats</span>
                         </a>
                     </li>
                     <li class="list-unstyled pb-3">
                         <a class="text-decoration-none text-white " href="#">
-                            <i class="fa-solid fa-signal pe-1"></i>
+                            <i class="fa-solid fa-signal pe-1 ps-1"></i>
                             <span class="fw-semibold pe-1 d-none d-md-inline">Signals</span>
                         </a>
                     </li>
@@ -101,7 +101,7 @@
                 <ul class="p-0">
                     <li class="list-unstyled pb-3">
                         <a class="text-decoration-none text-white" href="#">
-                            <i class="fa-solid fa-gear pe-2"></i>
+                            <i class="fa-solid fa-gear pe-2 ps-1"></i>
                             <span class="fw-semibold pe-1 d-none d-md-inline">Admin</span>
                         </a>
                     </li>
@@ -110,7 +110,8 @@
             </div>
 
         </div>
-        <!-- Other content starts here -->
+
+        <!-- MIAN CONTENT -->
         <main class="mainContent container-fluid">
 
             <div class="row bg-primary py-3 align-items-center">
@@ -140,9 +141,11 @@
                     <span class="text-white pe-3">Nuovo Studente </span>
 
 
-                    <button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas"
+                    <button class="new btn btn-primary p-0" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                             class="fa-sharp fa-solid fa-plus border border-white p-2"></i></button>
+
+                <!-- OFFCANVAS STARTS HERE -->
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
@@ -152,13 +155,7 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                      
-
-
                             <form class="row g-3 fw-bold">
-
-                                
-
                                 <div class="col-md-6">
                                     <label for="firstName" class="form-label">Nome</label>
                                     <input type="text" class="form-control" id="firstName">
@@ -175,7 +172,6 @@
                                         <input type="email" class="form-control" id="inputEmail4">
                                     </div>
                                 </div>
-                                
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="inputPassword4">
@@ -202,7 +198,7 @@
                                 <div class="mb-3">
                                     <label for="formFile" class="form-label">Foto</label>
                                     <input class="form-control" type="file" id="formFile">
-                                  </div>
+                                </div>
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -219,14 +215,12 @@
                                 </div>
                             </form>
 
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
+            <!-- SECOND SECTION FIRST CARD IN MAIN STARTS HERE -->
             <div class="row">
                 <div class="col-12 col-md-8 pt-4">
                     <div class="card">
@@ -251,7 +245,8 @@
                                         <td class="text-center align-middle d-none d-sm-table-cell">15-Feb-2021</td>
                                         <td class="text-center align-middle d-none d-sm-table-cell">20%</td>
                                         <td class="text-center align-middle">
-                                            <span class="bg-success rounded text-white p-1 fw-semibold doneGreen">Done</span>
+                                            <span
+                                                class="bg-success rounded text-white p-1 fw-semibold doneGreen">Done</span>
                                         </td>
                                         <td class="text-center align-middle">
                                             <i
@@ -391,6 +386,8 @@
                         </div>
                     </div>
 
+                
+                    <!-- SECOND SECTION SECOND CARD IN MAIN STARTS HERE -->
                     <div class="card mt-4">
                         <h5 class="card-header">F.A.Q.</h5>
                         <div class="card-body">
@@ -444,12 +441,13 @@
                                             Corporis rem quo sunt soluta numquam voluptas fugiat.</div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- SECOND SECTION THIRD CARD IN MAIN STARTS HERE -->
+
                 <div class="col-12 col-md-4 pt-4">
                     <div class="card mb-4">
                         <h5 class="card-header">To do</h5>
@@ -481,6 +479,7 @@
                         </ul>
                     </div>
 
+                    <!-- SECOND SECTION FOURTH CARD IN MAIN STARTS HERE -->
                     <div class="card mb-4">
                         <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -497,15 +496,9 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </main>
-
-
     </div>
-
-
 
 </body>
 
