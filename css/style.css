@@ -2,11 +2,14 @@
 :root {
     --navbar-height: 4rem;
     --sideBar-widht: 10rem;
+    --sideBar-mobile-width: 4.5rem
     
 }
 
 .pageWrapper{
-    height: calc(100vh + 4rem);
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -14,8 +17,12 @@
     height: var(--navbar-height)
 }
 
+.mobileLogo{
+    width: 40px;
+}
+
 .search-bar {
-    flex: 0 0 82%;
+   /*  flex: 0 0 75%; */
   }
 
  .form-control {
@@ -24,24 +31,24 @@
 
 
 
-main{
-    height: 100%;
-    padding-top: 4rem;
+section{
+    height: calc(100% - var(--navbar-height));
+    /* padding-top: 4rem; */
 
 }
 
 .mainContent{
-    width: 100%;
-    height: calc(100% - 8rem );
-    margin-left: var(--sideBar-widht);
+    width: calc(100% - var(--sideBar-widht));
+    height: calc(100% - var(--navbar-height));
+    background-color: #f8f9fa;
+    overflow-y: auto;
     
 }
 
 .sideBar{
-    height: calc(100vh - 4rem);
+    height: calc(100vh - var(--navbar-height));
     background-image: url(sidebar-bg.png);
     background-color: #1a2b3d;
-    position: fixed;
     width: var(--sideBar-widht);
 }
 
@@ -57,14 +64,46 @@ main{
 }
 
 
-
-.nome{
-    width: 60%;
-}
-
-.data{
-    width: 15%;
+th.nome{
+    width: 30%;
 }
 
 
+/* .table{
+    font-size: 0.75rem;
+    
+} */
 
+
+.coding-image{
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.table>:not(caption)>*>*{
+    padding: 0.5rem 0rem !important;
+}
+
+.doneGreen,
+.processYellow,
+.failRed{
+    font-size: 0.75rem;
+}
+
+.fa-pencil,
+.fa-trash{
+    font-size: 0.75rem;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .sideBar{
+        width: var(--sideBar-mobile-width);
+    }
+
+    .mainContent{
+        width: calc(100% - var(--sideBar-mobile-width));
+    }
+    
+}
